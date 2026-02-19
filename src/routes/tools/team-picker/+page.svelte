@@ -18,9 +18,9 @@
         // Max team size is 4
         if (selected.length >= 4) return true;
         
-        // S ratings cannot team with anyone
-        if (selected.some(p => p.rating === 'S')) return true;
-        if (rating === 'S' && selected.length > 0) return true;
+        // S rated players can't team with anybody A or above
+        if (rating === 'S' && selected.some(p => p.rating === 'A' || p.rating === 'S')) return true;
+        if ((rating === 'A' || rating === 'S') && selected.some(p => p.rating === 'S')) return true;
         
         // Max of two A ratings on a team
         if (rating === 'A' && selected.filter(p => p.rating === 'A').length >= 2) return true;
