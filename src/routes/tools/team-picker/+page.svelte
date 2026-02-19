@@ -2,7 +2,7 @@
     const ratings = {
         S: ['Aurates_', 'GamingPinguinYT'],
         A: ['OmlByte', 'Beyondd_', 'DocDeathSNR', 'Poowen_', 'E1ox', 'Whispree'],
-        B: ['x_Alastoro_', 'djc11', 'Breezify_', 'PyroPirates', 'ClashOfPhilipp', 'ZackIsBoy', 'AJBlaster2009'],
+        B: ['x_Alastoro_', 'djc11', 'Breezify_', 'Pyro_Pirates', 'ClashOfPhilipp', 'Zackisboi1051', 'AJBlaster2009'],
         C: ['Noxious2719', 'BossXmage', 'SharknessMC', 'OAPdust66', 'Squidling4121', 'X_TyFighter', 'Mysticboss2022', 'Blood09', 'Captainmail', 'R399y', 'Nazvito'],
         D: ['MCfreezieYT', '43resumodnar', 'TheBabaYaga', 'ItsVain', 'NavyHAWKS', 'CasperBomSquad', 'MisremEmberEd'],
         E: ['Never63', 'Notlamii', 'VoidEternal11'],
