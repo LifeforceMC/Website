@@ -1,7 +1,7 @@
 <script lang="ts">
     const ratings = {
         S: ['Aurates_', 'GamingPinguinYT'],
-        A: ['OmlByte', 'Beyondd_', 'Hir0St0rm', 'DocDeathSNR', 'Poowen_', 'E1ox', 'Whispree', 'rzyuk'],
+        A: ['OmlByte', 'Beyondd_', 'Hir0St0rm', 'DocDeathSNR', 'Poowen_', 'E1ox', 'Whispree', 'rzyuk', 'FzN_ReFl3x'],
         B: ['x_Alastoro_', 'djc11', 'Breezify_', 'Pyro_Pirates', 'ClashOfPhilipp', 'Zackisboi1051', 'AJBlaster2009'],
         C: ['Noxious2719', 'BossXmage', 'SharknessMC', 'OAPdust66', 'Squidling4121', 'X_TyFighter', 'Mysticboss2022', 'Blood09', 'Captainmail', 'R399y', 'Nazvito'],
         D: ['MCfreezieYT', '43resumodnar', 'TheBabaYaga', 'ItsVain', 'NavyHAWKS', 'CasperBomSquad', 'MisremEmberEd', 'LivaTheDiva'],
@@ -27,6 +27,13 @@
         
         return false;
     }
+
+    function playerHead(player: string) {
+        if (player.startsWith('.')) {
+            return `https://mc-heads.net/avatar/MHF_Steve.png`
+        }
+        return `https://minotar.net/helm/${player}/32`;
+    }
 </script>
 
 <svelte:head>
@@ -50,7 +57,7 @@
                                 console.log('Adding', player, 'to team');
                                 selected = [...selected, { name: player, rating }];
                             }} class:disabled={isDisabled(rating)} class:selected={selected.some(p => p.name === player)}>
-                                <img src={`https://minotar.net/helm/${player}/32`} alt="{player} avatar" />
+                                <img src={playerHead(player)} alt="{player} avatar" />
                                 <span>{player}</span>
                             </button>
                         </li>
@@ -70,7 +77,7 @@
                             console.log('Removing', player.name, 'from team');
                             selected = selected.filter((_, index) => index !== i);
                         }}>
-                            <img src={`https://minotar.net/helm/${player.name}/32`} alt="{player.name} avatar" />
+                            <img src={playerHead(player.name)} alt="{player.name} avatar" />
                             <span>{player.name} ({player.rating})</span>
                         </button>
                     </li>
