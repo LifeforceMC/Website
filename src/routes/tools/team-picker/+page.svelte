@@ -34,6 +34,7 @@
 </svelte:head>
 
 <p>Pick your team!</p>
+<p>If you believe a player is missing, please DM me on Discord (@lilacember) or create a ticket in the server (found <a href="/">here</a>).</p>
 
 <div class="tool">
     <div class="list">
