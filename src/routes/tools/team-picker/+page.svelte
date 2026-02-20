@@ -6,7 +6,7 @@
         C: ['Noxious2719', 'BossXmage', 'SharknessMC', 'OAPdust66', 'Squidling4121', 'X_TyFighter', 'Mysticboss2022', 'Blood09', 'Captainmail', 'R399y', 'Nazvito'],
         D: ['MCfreezieYT', '43resumodnar', 'TheBabaYaga', 'ItsVain', 'NavyHAWKS', 'CasperBomSquad', 'MisremEmberEd', 'LivaTheDiva'],
         E: ['Never63', 'Notlamii', 'VoidEternal11'],
-        F: ['Rozzer047', 'SupineJarl', 'Freenora', 'M1CI']
+        F: ['Rozzer047', 'SupineJarl', 'Freenora', 'M1CI', '.GivenPants1879']
     }
 
     let selected: Array<{
